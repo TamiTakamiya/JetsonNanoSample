@@ -35,7 +35,7 @@ def main():
     COUNT = 10
     answers = np.zeros((COUNT, 3), dtype=np.float32)
     start = time.time()
-    for i in range(10):
+    for i in range(COUNT):
         answers[i] = np.array(bayesian_network())
     print(time.time() - start)
     print(np.mean(answers, axis=0))
